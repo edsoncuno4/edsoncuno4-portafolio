@@ -12,6 +12,6 @@ import Header from "./Header.vue"
 <style>
 main {
   margin-top: 5rem;
-  padding: 0 15px;
+  padding: 0 25px;
 }
 </style>

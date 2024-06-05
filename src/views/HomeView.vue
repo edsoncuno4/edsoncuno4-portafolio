@@ -15,17 +15,36 @@
             <ul class="socialNetworks">
                 <li>
                     <a href="https://github.com/edsoncuno4" target="_blank">
+                        <div class="icon"
+                            style="background-image: url('/icons/github.svg'); background-position: center; background-size: contain; background-repeat: no-repeat;">
+                        </div>
                         <div>Github</div>
                     </a>
                 </li>
                 <li>
                     <a href="https://www.linkedin.com/in/edson-cuno-tipso" target="_blank">
-
+                        <div class="icon"
+                            style="background-image: url('/icons/linkedin.svg'); background-position: center; background-size: contain; background-repeat: no-repeat;">
+                        </div>
                         <div>LinkedIn</div>
                     </a>
                 </li>
             </ul>
         </div>
+    </div>
+    <div class="aboutMe">
+        <h2>Acerca de mí</h2>
+        <p>
+            Estudiante de Ingeniería Informática con conocimientos en desarrollo web.
+        </p>
+        <p>
+            Actualmente, me dedico a incrementar mis habilidades al construir sistemas web.
+        </p>
+        <h3>Herramientas</h3>
+        <p>
+            El conjunto de herramientas tecnológicas que utilizo para aumentar mi
+            eficacia y creatividad en el mundo de la informática, son:
+        </p>
     </div>
 </template>
 
@@ -37,8 +56,9 @@
 }
 
 .photo {
-    width: 75%;
-    padding-bottom: 75%;
+    margin: 2rem 0;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     background-image: url("/images/perfil.png");
     background-position: center;
@@ -46,7 +66,6 @@
     background-size: cover;
     border: 3px solid white;
     box-shadow: 0.5rem 0.5rem black, -0.5rem -0.5rem #ccc;
-    margin: 2rem 0;
 }
 
 .greetings {
@@ -127,5 +146,87 @@
     display: flex;
     list-style-type: none;
     flex-wrap: wrap;
+}
+
+.socialNetworks li a {
+    font-size: 1.2rem;
+    color: #3f72af;
+    border: 3px solid #112d4e;
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    border-radius: 0.5rem;
+    transition: hover 0.3s ease-in-out;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.socialNetworks li a:hover {
+    border: 3px solid #3f72af;
+    opacity: 0.9;
+}
+
+.socialNetworks li a .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+/**
+ * about me
+ */
+
+.aboutMe {
+    width: 100%;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+p {
+    font-size: 25px;
+}
+
+h3 {
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+@media (min-width: 320px) {}
+
+@media (min-width: 480px) {}
+
+@media (min-width: 576px) {
+    .photo {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .greetings {
+        width: 40%;
+    }
+}
+
+@media (min-width: 992px) {
+    .photo {
+        width: 350px;
+        height: 350px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .photo {
+        width: 450px;
+        height: 450px;
+    }
 }
 </style>
