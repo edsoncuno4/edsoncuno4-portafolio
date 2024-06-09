@@ -13,7 +13,7 @@ import Card from "./Card.vue";
             constante de soluciones. Algunos ejemplos destacados de mi trabajo
             incluyen:
         </p>
-        <Card />
+        <Card logo="/icons/emco.svg" title="asd1" description="asd2" />
     </div>
 </template>
 
@@ -30,6 +30,7 @@ h2 {
 }
 
 p {
-    font-size: 25px;
+    margin: 16px 0;
+    font-size: 20px;
 }
 </style>
