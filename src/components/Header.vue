@@ -21,13 +21,13 @@ function showNav() {
             <nav class="navigationPc">
                 <ul>
                     <li>
-                        <RouterLink to="/" @click="showNav">Portafolio</RouterLink>
+                        <a @click="showNav">Inicio</a>
                     </li>
                     <li>
-                        <RouterLink to="/proyectos" @click="showNav">Proyectos</RouterLink>
+                        <a @click="showNav">Acerca de mi</a>
                     </li>
                     <li>
-                        <RouterLink to="/blog" @click="showNav">Blog</RouterLink>
+                        <a @click="showNav">Proyectos</a>
                     </li>
                 </ul>
             </nav>
@@ -38,13 +38,13 @@ function showNav() {
         <nav ref="navigationMobile" class="navigationMobile">
             <ul>
                 <li>
-                    <RouterLink to="/" @click="showNav">Portafolio</RouterLink>
+                    <a @click="showNav">Portafolio</a>
                 </li>
                 <li>
-                    <RouterLink to="/proyectos" @click="showNav">Proyectos</RouterLink>
+                    <a @click="showNav">Proyectos</a>
                 </li>
                 <li>
-                    <RouterLink to="/blog" @click="showNav">Blog</RouterLink>
+                    <a @click="showNav">Blog</a>
                 </li>
             </ul>
         </nav>

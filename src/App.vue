@@ -1,7 +1,11 @@
 <script setup>
-import Layout from "./components/Layout.vue"
+import Header from "./components/Header.vue"
+import Inicio from "./components/Inicio.vue";
+import AboutMe from "./components/AboutMe.vue";
 </script>
 
 <template>
-  <Layout />
+  <Header />
+  <Inicio />
+  <AboutMe />
 </template>

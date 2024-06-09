@@ -32,33 +32,20 @@
             </ul>
         </div>
     </div>
-    <div class="aboutMe">
-        <h2>Acerca de mí</h2>
-        <p>
-            Estudiante de Ingeniería Informática con conocimientos en desarrollo web.
-        </p>
-        <p>
-            Actualmente, me dedico a incrementar mis habilidades al construir sistemas web.
-        </p>
-        <h3>Herramientas</h3>
-        <p>
-            El conjunto de herramientas tecnológicas que utilizo para aumentar mi
-            eficacia y creatividad en el mundo de la informática, son:
-        </p>
-    </div>
 </template>
 
 <style scoped>
 .container {
+    margin: 80px 25px 0px 25px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
 .photo {
-    margin: 2rem 0;
-    width: 250px;
-    height: 250px;
+    margin: 16px 0;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     background-image: url("/images/perfil.png");
     background-position: center;
@@ -148,7 +135,7 @@
     flex-wrap: wrap;
 }
 
-.socialNetworks li a {
+.socialNetworks a {
     font-size: 1.2rem;
     color: #3f72af;
     border: 3px solid #112d4e;
@@ -162,36 +149,15 @@
     margin-bottom: 1rem;
 }
 
-.socialNetworks li a:hover {
+.socialNetworks a:hover {
     border: 3px solid #3f72af;
     opacity: 0.9;
 }
 
-.socialNetworks li a .icon {
+.socialNetworks a .icon {
     width: 20px;
     height: 20px;
     margin-right: 8px;
-}
-
-/**
- * about me
- */
-
-.aboutMe {
-    width: 100%;
-}
-
-h2 {
-    font-size: 40px;
-}
-
-p {
-    font-size: 25px;
-}
-
-h3 {
-    font-size: 30px;
-    margin-top: 20px;
 }
 
 @media (min-width: 320px) {}
@@ -199,18 +165,17 @@ h3 {
 @media (min-width: 480px) {}
 
 @media (min-width: 576px) {
-    .photo {
-        width: 300px;
-        height: 300px;
-    }
-}
-
-@media (min-width: 768px) {
     .container {
         justify-content: space-evenly;
         align-items: center;
     }
+}
 
+@media (min-width: 768px) {
+    .photo {
+        width: 300px;
+        height: 300px;
+    }
     .greetings {
         width: 40%;
     }
