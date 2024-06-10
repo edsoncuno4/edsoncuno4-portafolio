@@ -1,3 +1,8 @@
+<script setup>
+import Link from "./Link.vue";
+import data from "./data";
+</script>
+
 <template>
     <div class="container">
         <div class="photo"></div>
@@ -13,21 +18,8 @@
                 Desarrollador Web
             </div>
             <ul class="socialNetworks">
-                <li>
-                    <a href="https://github.com/edsoncuno4" target="_blank">
-                        <div class="icon"
-                            style="background-image: url('/icons/github.svg'); background-position: center; background-size: contain; background-repeat: no-repeat;">
-                        </div>
-                        <div>Github</div>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/edson-cuno-tipso" target="_blank">
-                        <div class="icon"
-                            style="background-image: url('/icons/linkedin.svg'); background-position: center; background-size: contain; background-repeat: no-repeat;">
-                        </div>
-                        <div>LinkedIn</div>
-                    </a>
+                <li v-for="(item, index) in data.links" :key="index">
+                    <Link class="link" :icon="item.icon" :name="item.name" :href="item.href" />
                 </li>
             </ul>
         </div>
@@ -47,7 +39,7 @@
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    background-image: url("/images/perfil.png");
+    background-image: url("https://lh3.googleusercontent.com/drive-viewer/AKGpihZi41H09fqri9xJ5OKFSQuwzrDlDZyv8fv87vSHHCgrd1V3Pn-XgUdVgFdjNFQm_1CEOYMrid59h-rkIxmytGlG3wa5MPF8Zjo");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -135,29 +127,8 @@
     flex-wrap: wrap;
 }
 
-.socialNetworks a {
-    font-size: 1.2rem;
-    color: #3f72af;
-    border: 3px solid #112d4e;
-    padding: 0.5rem;
-    margin-right: 0.5rem;
-    border-radius: 0.5rem;
-    transition: hover 0.3s ease-in-out;
-    text-decoration: none;
-    color: black;
-    display: flex;
-    margin-bottom: 1rem;
-}
-
-.socialNetworks a:hover {
-    border: 3px solid #3f72af;
-    opacity: 0.9;
-}
-
-.socialNetworks a .icon {
-    width: 20px;
-    height: 20px;
-    margin-right: 8px;
+.link {
+    margin: 8px;
 }
 
 @media (min-width: 320px) {}
@@ -176,6 +147,7 @@
         width: 300px;
         height: 300px;
     }
+
     .greetings {
         width: 40%;
     }

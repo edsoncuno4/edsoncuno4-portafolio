@@ -1,18 +1,8 @@
 <script setup>
 import Badge from "./Badge.vue"
+import data from "./data"
 
-const listOfBadges = [{ name: "Microsoft Word", url: "/icons/microsoft-word.svg", color: "#103f91" },
-{ name: "Microsoft Excel", url: "/icons/microsoft-excel.svg", color: "#185c37" },
-{ name: "Microsoft Power Point", url: "/icons/microsoft-power-point.svg", color: "#d35230" },
-{ name: "Visual Studio Code", url: "/icons/visual-studio-code.svg", color: "#0179cb" },
-{ name: "Microsoft Windows", url: "/icons/microsoft-windows.svg", color: "#00adef" },
-{ name: "Ubuntu", url: "/icons/ubuntu.svg", color: "#e95420" },
-{ name: "Git", url: "/icons/git.svg", color: "#ee513b" },
-{ name: "Docker", url: "/icons/docker-blue.svg", color: "#1d63ed" },
-{ name: "Apache", url: "/icons/apache.svg", color: "#d12127" },
-{ name: "Microsoft IIS", url: "/icons/microsoft-iis.svg", color: "#00adef" },
-{ name: "MySQL", url: "/icons/mysql-official.svg", color: "#e48e00" },
-{ name: "php", url: "/icons/php.svg", color: "#8892bf" }]
+const list = data.tools;
 </script>
 
 <template>
@@ -30,7 +20,7 @@ const listOfBadges = [{ name: "Microsoft Word", url: "/icons/microsoft-word.svg"
             la informática son:
         </p>
         <div class="badges">
-            <Badge v-for="(item, index) in listOfBadges" :key="index" :name="item.name" :url="item.url"
+            <Badge class="badge" v-for="(item, index) in list" :key="index" :name="item.name" :url="item.url"
                 :color="item.color" />
         </div>
     </div>
@@ -61,6 +51,11 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 16px
+}
+
+.badge {
+    margin-bottom: 16px;
 }
 
 @media (min-width: 320px) {
@@ -71,6 +66,10 @@ h3 {
         /*nota: donde dice 8rem es el ancho del item a utilizar*/
         grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
         gap: 8px;
+    }
+
+    .badge {
+        margin: 0;
     }
 }
 

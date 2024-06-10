@@ -109,7 +109,7 @@ li a:hover {
     width: 10.5rem;
     height: 3.5rem;
     cursor: pointer;
-    background-image: url("/icons/logo-white.svg");
+    background-image: url("/icons/edsoncuno.svg");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -163,7 +163,7 @@ li a:hover {
     }
 
     .navigationPc ul li {
-        margin-right: 1rem;
+        margin-right: 32px;
     }
 
     .navigationPc ul li:last-child {

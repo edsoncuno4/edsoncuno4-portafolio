@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from 'vue';
+
 const isActive = ref(false)
 defineProps(['name', 'url', 'color'])
 </script>
@@ -41,4 +42,5 @@ article {
     text-overflow: ellipsis;
     font-size: 16px;
 }
+
 </style>
