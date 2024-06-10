@@ -6,7 +6,7 @@ https://edsoncuno4-portafolio.onrender.com/
 
 ## Desarrollo
 
-### Descargar el el proyecto
+### Descargar el proyecto
 
 `git clone git@github.com:edsoncuno4/edsoncuno4-portafolio.git`
 
