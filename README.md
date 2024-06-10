@@ -6,12 +6,13 @@ https://edsoncuno4-portafolio.onrender.com/
 
 ## Desarrollo
 
-### Descargar el repositorio
+### Descargar el el proyecto
 
 `git clone git@github.com:edsoncuno4/edsoncuno4-portafolio.git`
 
 ### Abrir el proyecto
-Abrir Visual Studio Code y abrir el proyecto.
+* Abrir Visual Studio Code
+* Buscar y abrir el proyecto.
 
 ### Levantar el devcontainer
 * View
