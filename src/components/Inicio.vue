@@ -4,7 +4,7 @@ import data from "./data";
 </script>
 
 <template>
-    <div class="container">
+    <div class="container" id="inicio">
         <div class="photo"></div>
         <div class="greetings">
             <h1 class="text1">

@@ -5,7 +5,7 @@ const list = data.projects;
 </script>
 
 <template>
-    <div class="container">
+    <div class="container" id="proyectos">
         <h2>Proyectos</h2>
         <p>
             En mi viaje en el mundo de la informática ha estado marcado por una

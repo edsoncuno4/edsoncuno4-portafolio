@@ -6,7 +6,7 @@ const list = data.tools;
 </script>
 
 <template>
-    <div class="container">
+    <div class="container" id="acerca-de-mi">
         <h2>Acerca de mí</h2>
         <p>
             Estudiante de Ingeniería Informática con conocimientos de desarrollo web.

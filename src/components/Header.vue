@@ -12,6 +12,25 @@ function showNav() {
     }
 }
 
+function scrollToSection(event) {
+    event.preventDefault();
+    const targetId = event.target.getAttribute("href");
+    const targetElement = document.querySelector(targetId);
+
+    if (targetElement) {
+        const headerHeight = document.querySelector("header")?.offsetHeight || 0;
+        const targetPosition =
+            targetElement.getBoundingClientRect().top +
+            window.scrollY -
+            headerHeight;
+
+        window.scrollTo({ top: targetPosition, behavior: "smooth" });
+    }
+
+    navigationMobile.value.style.maxHeight = null;
+}
+
+
 </script>
 
 <template>
@@ -21,13 +40,13 @@ function showNav() {
             <nav class="navigationPc">
                 <ul>
                     <li>
-                        <a @click="showNav">Inicio</a>
+                        <a @click="scrollToSection" href="#inicio">Inicio</a>
                     </li>
                     <li>
-                        <a @click="showNav">Acerca de mi</a>
+                        <a @click="scrollToSection" href="#acerca-de-mi">Acerca de mí</a>
                     </li>
                     <li>
-                        <a @click="showNav">Proyectos</a>
+                        <a @click="scrollToSection" href="#proyectos">Proyectos</a>
                     </li>
                 </ul>
             </nav>
@@ -38,13 +57,13 @@ function showNav() {
         <nav ref="navigationMobile" class="navigationMobile">
             <ul>
                 <li>
-                    <a @click="showNav">Portafolio</a>
+                    <a @click="scrollToSection" href="#inicio">Inicio</a>
                 </li>
                 <li>
-                    <a @click="showNav">Proyectos</a>
+                    <a @click="scrollToSection" href="#acerca-de-mi">Acerca de mí</a>
                 </li>
                 <li>
-                    <a @click="showNav">Blog</a>
+                    <a @click="scrollToSection" href="#proyectos">Proyectos</a>
                 </li>
             </ul>
         </nav>

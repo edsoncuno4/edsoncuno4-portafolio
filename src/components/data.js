@@ -90,7 +90,7 @@ const data = {
         {
           icon: "/icons/download.svg",
           name: "Descarga de archivos",
-          href: "https://www.google.com",
+          href: "https://mega.nz/file/LaRgACwS#QGfn66nwWGMitjRsVyXQ5q93KbyFEASTnrfvHYR1_y8",
         },
       ],
     },
