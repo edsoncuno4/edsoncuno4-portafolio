@@ -1,7 +1,13 @@
 <script setup>
-import { ref } from 'vue';
-const isActive = ref(false)
-const navigationMobile = ref(null)
+import { ref, onMounted } from 'vue';
+
+const isActive = ref(false);
+const navigationMobile = ref(null);
+const headerHeight = ref();
+
+onMounted(() => {
+    headerHeight.value = document.querySelector("header")?.offsetHeight || 0;
+})
 
 function showNav() {
     isActive.value = !isActive.value
@@ -18,11 +24,11 @@ function scrollToSection(event) {
     const targetElement = document.querySelector(targetId);
 
     if (targetElement) {
-        const headerHeight = document.querySelector("header")?.offsetHeight || 0;
+        //const headerHeight = document.querySelector("header")?.offsetHeight || 0;
         const targetPosition =
             targetElement.getBoundingClientRect().top +
             window.scrollY -
-            headerHeight;
+            headerHeight.value;
 
         window.scrollTo({ top: targetPosition, behavior: "smooth" });
     }

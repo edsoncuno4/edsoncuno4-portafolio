@@ -1,10 +1,9 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 
-const now = ref()
+const now = ref();
 
 onMounted(() => {
-
     now.value = new Date().getFullYear();
 })
 </script>
