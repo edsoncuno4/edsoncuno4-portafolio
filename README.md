@@ -6,26 +6,23 @@ https://edsoncuno4-portafolio.onrender.com/
 
 ## Desarrollo
 
-Descargar el repositorio
+### Descargar el repositorio
 
 `git clone git@github.com:edsoncuno4/edsoncuno4-portafolio.git`
 
+### Abrir el proyecto
 Abrir Visual Studio Code y abrir el proyecto.
 
-Luego:
-
+### Levantar el devcontainer
 * View
 * Command Palette...
-* Dev Container: Reopen Folder in WSL
+* Dev Container: Reopen Folder in Container
 
+### Abrir el emulador terminal
+* View
+* Terminal
 
-Recordar que en package.json 
-se esta usando:
-
-"dev": "vite --host"
-
-Para poder usar correctamente el servidor de desarrollo.
-
+### Ver
 En el navegador usar: `http://localhost:5173/`
 
 ### SALIR
