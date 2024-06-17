@@ -79,13 +79,13 @@ const data = {
       color: "#74ac63",
     },
     {
-      name: "Vue.js"
-      url: "/icons/vue.svg"
+      name: "Vue.js",
+      url: "/icons/vue.svg",
       color: "#42b883"
     },
     {
-      name: "Laravel"
-      url: "/icons/laravel.svg"
+      name: "Laravel",
+      url: "/icons/laravel.svg",
       color: "#f72c1f"
     }
   ],
